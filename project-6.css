@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+    font-family: sans-serif;
+}
+.container-fluid{
+    position: relative;
+}
+.container-fluid::before{
+    clip-path: ellipse(53% 100% at 50% 0%);
+    content: "";
+   width:100%;
+   height:10vh;
+   left:0;
+    position:absolute;
+    background-color:white;
+    top: 0px;
+}
+.container-fluid1{
+    border: none;
+    position: relative;
+}
+.container-fluid1::before{
+    clip-path: ellipse(53% 100% at 50% 0%);
+    content: "";
+   width:100%;
+   height:10vh;
+   left:0;
+    position:absolute;
+    background-color:#f2f5fc;
+    top: 0px;
+}
+.card i{
+    font-size: 2rem;
+    color: white;
+}
+.card{
+    border: 0;
+}
+.cont1{
+    background-color: #f2f5fc;
+
+}
+.hero{
+position: relative;  
+margin:1.5rem 0rem;
+cursor: pointer;
+
+}
+.main-box{
+    width:100%;
+}
+.hero img{
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 3px 6px grey;
+}
+
+
+.overlay{
+    background-color:rgb(0, 70, 161);
+  opacity: 0;
+    position: absolute;
+    top:0;
+    content:"";
+    left:0;
+   
+    color:white;
+    z-index: 2;
+    width:100%;
+    border-radius: 8px;
+   
+    transition: all 0.3s linear;
+    height:100%;
+}
+.overlay h4{
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 100;
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+.hero:hover .overlay{
+opacity: 0.8;
+}
+.container2{
+    width:800px;
+    margin:auto;
+}
+ul{
+    list-style: none;
+}
+.card-shadow{
+    box-shadow: 0px 3px 10px rgba(0 0 0 /0.3);
+}
+.icons1{
+    
+    color: rgb(0, 68, 255);
+    padding: 1rem;
+    background-color: rgb(199, 237, 252);
+    border-radius: 50px;
+}
+.dropdown-menu{
+    left: -200px !important;;
+    border: 0px;
+}
+@media only screen and (max-width:768px)
+{
+    .container2{
+        width:100%;
+    }
+}
+@media only screen and (max-width:560px)
+{
+    .cards{
+        margin:1rem 0rem;
+    }
+    .footer{
+        padding: 0rem !important;;
+    }
+   .container> img{
+       width:150px;
+   }
+ 
+}
+.content{
+    display: none;
+}
+.col-12 h5{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:rgb(206, 206, 206);
+}
+.col-12 ul li {
+    font-size: 0.9rem;
+    margin: 0.3rem 0rem;
+}
+.col-12 ul li a{
+    text-decoration: none;
+    color:rgb(206, 206, 206);
+}
+.col-12 ul li a:hover{
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+.icons i{
+    margin:0.2rem;
+    font-size: 1.4rem;
+background-color: rgb(58, 60, 66);
+}
+.box h5{
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+.dropdown-menu{
+    box-shadow: 0px 3px 6px grey;
+    border: none;
+}
+.box ul li a{
+    font-size: 0.9rem;
+}
